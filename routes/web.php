@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 Route::post('/login', [AuthController::class, 'login']); // route to login
 Route::post('/logout', [AuthController::class, 'logout']); // route to logout
